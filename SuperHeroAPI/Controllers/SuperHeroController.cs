@@ -9,33 +9,7 @@ namespace SuperHeroAPI.Controllers
     [ApiController]
     public class SuperHeroController : ControllerBase
     {
-        private static List<SuperHero> superHeroes = new List<SuperHero>()
-            {
-                new SuperHero
-                {
-                    Id = 1,
-                    Name = "SuperMan",
-                    FirstName = "Super",
-                    LastName = "Man",
-                    Place = "USA"
-                },
-                new SuperHero
-                {
-                    Id = 2,
-                    Name = "SpiderMan",
-                    FirstName = "Spider",
-                    LastName = "Man",
-                    Place = "UK"
-                },
-                new SuperHero
-                {
-                    Id = 3,
-                    Name = "IronMan",
-                    FirstName = "Iron",
-                    LastName = "Man",
-                    Place = "USA"
-                }
-            };
+       
         private readonly ISuperHeroService _superHeroService;
         public SuperHeroController(ISuperHeroService superHeroService)
         {
